@@ -108,3 +108,6 @@ console.log(td07kv.price);
 console.log(td07kv.availability());
 console.log(td17kv.sale());
 
+// All changes made, still don't get your "Hey there" comment
+
+

@@ -12,11 +12,14 @@
 // const tieLimes = ["Alonso", "Anthony", "Jack", "Sergio"]
 // console.log(tieLimes[1][4] + tieLimes[0][4] + tieLimes[0][1] + tieLimes[3][5]);
 
-const age = 22
-const anotherAge = 24
-console.log("alonso " + anotherAge);
+// const age = 22
+// const anotherAge = 24
+// console.log("alonso " + anotherAge);
 
-function displayUser(userName, userLastName) {
-    console.log("User: " + userName + " " + userLastName);
-}
-displayUser("Anthony" , "Valenzuela")
+const displayUserAge = (userName, userAge) => `User: ${userName} ${userAge}`
+
+displayUserAge("Alonso", 29)
+
+const displayUser = (userName, userLastName) => `User: ${userName} ${userLastName}`
+
+displayUser("Anthony", "Valenzuela")
