@@ -85,7 +85,9 @@ class electronicDrum {
     }
     sale() {
         if (this.inDiscount) {
-            return `New price: ${this.price}` - 20 % `${this.price}`;
+            //return `New price: ${this.price}` - 20 % `${this.price}`;
+            console.log(this.price)
+            return `New price: ${this.price - (this.price * 0.2)}`
         } else {
             return "this item has no discount";
         }
@@ -98,8 +100,9 @@ class electronicDrum {
         }
     }
 }
-let td07kv = new electronicDrum("TD-07KV", "Roland", 4950, true, false,);
-let td17kv = new electronicDrum("TD-17KV", "Roland", 6099, true, true,);
+
+const td07kv = new electronicDrum("TD-07KV", "Roland", 4950, true, false,);
+const td17kv = new electronicDrum("TD-17KV", "Roland", 6099, true, true,);
 
 console.log(td17kv.model);
 console.log(td07kv.price);
