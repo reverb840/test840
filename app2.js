@@ -76,24 +76,24 @@ let purchase ={
 } 
 */
 class electronicDrum {
-    constructor (model, brand, price, inDiscount, inStock) {
-        this.model= model;
-        this.brand= brand;
-        this.price= price;
-        this.inDiscount= inDiscount;
-        this.inStock= inStock;
+    constructor(model, brand, price, inDiscount, inStock) {
+        this.model = model;
+        this.brand = brand;
+        this.price = price;
+        this.inDiscount = inDiscount;
+        this.inStock = inStock;
     }
-    sale(){
-        if(this.inDiscount){
-            return `New price: ${this.price}` - 20% `${this.price}`;
-        } else{
+    sale() {
+        if (this.inDiscount) {
+            return `New price: ${this.price}` - 20 % `${this.price}`;
+        } else {
             return "this item has no discount";
         }
     }
-    availability(){
-        if (this.inStock){
+    availability() {
+        if (this.inStock) {
             return `The item ${this.model} is currently available`;
-        } else{
+        } else {
             return `The item ${this.model} is currently not available`;
         }
     }
@@ -107,3 +107,4 @@ console.log(td07kv.availability());
 console.log(td17kv.sale());
 
 //hey there
+// Now I see your comment
