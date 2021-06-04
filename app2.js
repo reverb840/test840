@@ -86,7 +86,6 @@ class electronicDrum {
     sale() {
         if (this.inDiscount) {
             //return `New price: ${this.price}` - 20 % `${this.price}`;
-            console.log(this.price)
             return `New price: ${this.price - (this.price * 0.2)}`
         } else {
             return "this item has no discount";
