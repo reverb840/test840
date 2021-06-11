@@ -1,0 +1,23 @@
+h1 {
+  width: 100%;
+  padding: 1em;
+  background: rgb(34, 41, 35);
+  color: white;
+  font-style: italic;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cards-container .card {
+  margin: 2em;
+}
