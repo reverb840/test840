@@ -14,10 +14,6 @@ const woman = new Woman("Sine", 24, "Female")
 
 const rocker = new Rocker("Rovetu", 31, "Diverso");
 
-
-console.log(rocker.name)
-//console.log(rocker.getGuitar())
-rocker.setGuitar(rocker.getJazzmaster())
 console.log(rocker.playGuitar())
 
 

@@ -5,6 +5,18 @@ export class Human {
     this.gender = gender;
   }
 
+  getName() {
+    return this.name;
+  }
+
+  getAge() {
+    return this.age;
+  }
+
+  getGender() {
+    return this.gender;
+  }
+
   eat() {
     return "Default Eating"
   }

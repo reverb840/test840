@@ -4,11 +4,11 @@ export class Fender {
     this.sound = sound;
   }
 
-  getSound() {
-    return this.sound;
+  getName() {
+    return this.name;
   }
 
-  sound() {
-    return `Sound:${this.getSound()}`;
+  getSound() {
+    return this.sound;
   }
 }

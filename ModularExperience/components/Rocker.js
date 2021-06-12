@@ -8,7 +8,6 @@ export class Rocker extends Man {
   guitar;
   constructor(name, age, gender) {
     super(name, age, gender)
-    this.setGuitar(telecaster)
   }
 
   setGuitar(guitar) {
@@ -24,6 +23,10 @@ export class Rocker extends Man {
   }
 
   playGuitar() {
-    return `I like this sound:${this.guitar.getSound()}`;
+    if (this.guitar == null) {
+      return `${this.getName()}: I can't play guitar cause I don't have one yet. Use the method setGuitar() to give me a guitar`
+    } else {
+      return `${this.getName()}: I like this sound:${this.guitar.getSound()}`;
+    }
   }
 }
