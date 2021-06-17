@@ -10,8 +10,12 @@ export class Drummer extends Man {
     super(name, age, gender)
   }
 
-  getCymbals(cymbals) {
+  setCymbals(cymbals) {
     this.cymbals = cymbals;
+  }
+
+  getCymbals() {
+    return this.cymbals;
   }
 
   purchaseASeries() {
@@ -26,7 +30,7 @@ export class Drummer extends Man {
     if (this.cymbals == null) {
       return `${this.getName()}: I have no cymbals yet :( `
     } else {
-      return `${this.getName()}: I like my new ${this.guitar.getSound()} cymbals`;
+      return `${this.getName()}: I like my new ${this.getCymbals().getName()} cymbals`;
     }
   }
 }

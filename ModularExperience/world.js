@@ -13,10 +13,12 @@ const woman = new Woman("Sine", 24, "Female")
 // console.log(man.eat())
 // console.log(woman.eat())
 
-const rocker = new Rocker("Rovetu", 31, "Diverso");
+//const rocker = new Rocker("Rovetu", 31, "Diverso");
 const drummer = new Drummer("Beba", 40, "Beba")
+const latestPurchase = drummer.purchaseASeries();
+drummer.setCymbals(latestPurchase);
 
-console.log(rocker.playGuitar())
+//console.log(rocker.playGuitar())
 
 console.log(drummer.playCymbals());
 
