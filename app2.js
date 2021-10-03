@@ -107,7 +107,7 @@ console.log(td17kv.model);
 console.log(td07kv.price);
 console.log(td07kv.availability());
 console.log(td17kv.sale());
-console.log(test_change)
+console.log("Another Test")
 
 //hey there
 // Now I see your comment
