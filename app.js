@@ -26,4 +26,5 @@ const displayUserAge = (userName, userAge) => `User: ${userName} Age: ${userAge}
 
 const displayUser = (userName, userLastName) => `User: ${userName} ${userLastName}`
 console.log(displayUser("Anthony", "Valenzuela"));
+console.log(displayUser("Alonso", "Caceda"));
 //Hey there
